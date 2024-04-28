@@ -71,7 +71,7 @@ get_ad<-function(ad,fd){
 }
 
 featuredata<-read.delim("01_getdata/GPL16699-15607.txt",header = T,
-                        sep = "\t",skip = 19)
+                        sep = "\t",skip = 19)  # Please download GPL16699-15607 file from GEO database
 colnames(featuredata)
 fd<-featuredata[featuredata$GENE_SYMBOL!="",
                 c("ID","GENE_SYMBOL","GENE_NAME","UNIGENE_ID","ENSEMBL_ID",
